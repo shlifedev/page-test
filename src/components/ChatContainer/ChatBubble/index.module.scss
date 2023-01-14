@@ -1,0 +1,48 @@
+.line{
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.receive{ 
+  justify-content: flex-start;
+}
+
+.line .receive .profile{
+  display: block;
+}
+
+.profile{    
+  & .thumbnail{
+    object-fit: cover;
+    width : 24px;
+    height : 24px;
+    border-radius: 50%;
+    background-color: black;
+  }
+}
+
+.bubble{
+  column-gap: 4px;
+  display: inline-flex;
+  padding : 6px;  
+  max-width: 200px;
+}
+ 
+.message{ 
+  position: relative;
+  top : 8px;
+  background : #eee;
+  border : 1px solid #ccc;   
+  border-radius : 12px 0px 12px 12px;
+  padding : 4px;
+  font-size : 0.75rem;
+}
+.message[receive=true]{ 
+  border-radius : 0 12px 12px 12px;
+}
+
+.message .row{
+  padding : 0 4px;
+  word-break: break-all;
+  line-height: 1.3;
+}

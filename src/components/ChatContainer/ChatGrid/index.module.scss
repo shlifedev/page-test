@@ -1,0 +1,9 @@
+ .grid{
+   flex-grow: 1;  
+   overflow-y: auto;
+   padding : 8px;
+ } 
+ .chatbox{
+   display: flex;
+   flex-direction: column;
+ }
